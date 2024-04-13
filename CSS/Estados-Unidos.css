@@ -1,0 +1,51 @@
+:root
+{
+    --primary-color : #FFFFFF;
+    --secondary-color : #000;
+    --third-color : #3C3B6E;
+    --fourth-color : #B22234;
+    --color-prueba : #1e4376;
+    --color-prueba2 : #2a548c;
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header-section-1
+{
+    background-color: var(--color-prueba);
+    padding: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.header-section-1 > .search-icon
+{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.header-section-1 > .menu-icon
+{
+    width: 60px;
+    height: 50px;
+}
+
+.header-section-2{
+
+    padding: 30px;
+    background-color: var(--color-prueba2);
+    color: var(--primary-color);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../imagenes/fondo-bandera-estados-unidos-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+

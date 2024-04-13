@@ -65,6 +65,11 @@ main
     border-radius: 25px;
 }
 
+.contenedor-banderas >a
+{
+    text-decoration: none;
+}
+
 .contenedor-bandera
 {
     display: flex;
