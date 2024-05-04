@@ -93,7 +93,7 @@ main > section
     margin-bottom: 35px;
 }
 
-.main-section-1 > p
+p
 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: justify;
@@ -101,6 +101,24 @@ main > section
 }
 
 .main-section-2{
-    margin-top: 50px;
+    margin-top: 60px;
 }
+
+.main-section-2-containers{
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.main-section-2-containers > h2{
+    color: var(--color-prueba);
+    font-size: 30px;
+}
+
+.main-section-2-containers > img{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
 
