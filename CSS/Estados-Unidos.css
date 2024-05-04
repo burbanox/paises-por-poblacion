@@ -65,18 +65,21 @@ main
     align-items: center;
 }
 
-.section-1
+main > section
 {
     width: 85%;
+    margin: 40px 0px 40px 0px;
 }
 
-.section-1 > h2
+.titulo-seccion
 {
+    background-color: var(--color-prueba);
     font-size: 45px;
-    color : var(--color-prueba);
+    color : white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+    padding: 15px;
 }
+
 
 .main-section-1
 {
@@ -95,5 +98,9 @@ main
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: justify;
     line-height: 1.8em;
+}
+
+.main-section-2{
+    margin-top: 50px;
 }
 
