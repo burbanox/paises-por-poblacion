@@ -24,10 +24,24 @@ let pregunta = {
     
 }
 
-
+let carruselContenedor = document.getElementById("carrusel-quiz")
+let button = document.getElementById("button-quiz");
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("dot");
+let portadaQuiz = document.getElementById("quiz-portada")
 
 let slideIndex = 1;
-showSlides(slideIndex);
+
+function activarQuiz(){
+  portadaQuiz.className += " desaparecer"
+  carruselContenedor.classList.remove("desaparecer")
+  button.className += " desaparecer"
+
+
+  showSlides(slideIndex);
+}
+
+button.addEventListener("click",activarQuiz)
 
 // Next/previous controls
 function plusSlides(n) {
@@ -42,8 +56,8 @@ function currentSlide(n) {
 function showSlides(n) {
   
   let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
+  slides = document.getElementsByClassName("mySlides");
+  dots = document.getElementsByClassName("dot");
 
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
