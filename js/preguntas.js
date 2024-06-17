@@ -342,4 +342,9 @@ for(let i =0;i<5;i++){
     preguntaSeleccionadas.push(preguntas[indice])
 }
 
-console.log(preguntaSeleccionadas)
+
+
+export {preguntaSeleccionadas}
+
+
+

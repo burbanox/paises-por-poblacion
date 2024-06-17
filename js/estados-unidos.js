@@ -1,34 +1,43 @@
-let pregunta = {
-  enunciado_pregunta: "Cual fue el primer presidente de los estados unidos",
-  "url-imagen": "",
-
-  opciones: [
-    {
-      textoOpcion: "Benjamin Franklin",
-      respuestaCorrecta: false,
-    },
-    {
-      textoOpcion: "George Washingtong",
-      respuestaCorrecta: true,
-    },
-    {
-      textoOpcion: "Donald Trump",
-      respuestaCorrecta: false,
-    },
-    {
-      textoOpcion: "Abraham Lincon",
-      respuestaCorrecta: false,
-    },
-  ],
-};
+import { preguntaSeleccionadas } from "./preguntas.js";
 
 let carruselContenedor = document.getElementById("carrusel-quiz");
 let button = document.getElementById("button-quiz");
 let slides = document.getElementsByClassName("mySlides");
 let dots = document.getElementsByClassName("dot");
 let portadaQuiz = document.getElementById("quiz-portada");
+let nextButton = document.getElementById("nextButton");
+let prevButton = document.getElementById("prevButton");
+let finishButton = document.getElementById("finishButton");
+
+nextButton.addEventListener("click", function () {
+  plusSlides(1);
+});
+
+prevButton.addEventListener("click", function () {
+  plusSlides(-1);
+});
+
+finishButton.addEventListener("click", finishQuiz);
 
 let slideIndex = 1;
+
+function llenarPreguntas(){
+  let enunciados = document.getElementsByClassName("quiz-title")
+
+  for(let i=0;i<preguntaSeleccionadas.length;i++){
+    enunciados[i].textContent = preguntaSeleccionadas[i]['enunciado_pregunta']
+  }
+
+  for(let i=0;i<preguntaSeleccionadas.length;i++){
+    let opciones = document.getElementsByClassName("pregunta-" + i)
+
+    for(let j=0;j<opciones.length;j++){
+      opciones[j].textContent = preguntaSeleccionadas[i]['opciones'][j]['textoOpcion']
+    }
+  }
+
+
+}
 
 function activarQuiz() {
   portadaQuiz.className += " desaparecer";
@@ -36,6 +45,8 @@ function activarQuiz() {
   button.className += " desaparecer";
 
   showSlides(slideIndex);
+
+  llenarPreguntas()
 }
 
 button.addEventListener("click", activarQuiz);
@@ -72,36 +83,32 @@ function showSlides(n) {
 }
 
 function verificarSeleccion(radios) {
-
   for (let i = 0; i < radios.length; i++) {
-      if (radios[i].checked) {
-          return true
-      }
-  }
-
-  return false
-}
-
-function finishQuiz(){
-let forms = document.getElementsByClassName("contenedor-preguntas")
-let mensajeError = ""
-let seleccionIncompleta = false
-
-  for(let i=1;i<=forms.length;i++){
-    let preguntas = document.getElementsByName("pregunta_"+i);
-
-    if(!verificarSeleccion(preguntas)){
-      mensajeError += "Por favor selelcciona una opcion en la pregunta " + i + "\n"
-      seleccionIncompleta = true
+    if (radios[i].checked) {
+      return true;
     }
   }
 
-  if(seleccionIncompleta){
-    alert(mensajeError)
-  }else {
-    
-    
+  return false;
+}
+
+function finishQuiz() {
+  let forms = document.getElementsByClassName("contenedor-preguntas");
+  let mensajeError = "";
+  let seleccionIncompleta = false;
+
+  for (let i = 1; i <= forms.length; i++) {
+    let preguntas = document.getElementsByName("pregunta_" + i);
+
+    if (!verificarSeleccion(preguntas)) {
+      mensajeError +=
+        "Por favor selelcciona una opcion en la pregunta " + i + "\n";
+      seleccionIncompleta = true;
+    }
   }
 
-
+  if (seleccionIncompleta) {
+    alert(mensajeError);
+  } else {
+  }
 }
