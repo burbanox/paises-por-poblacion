@@ -1,4 +1,4 @@
-import { preguntaSeleccionadas } from "./preguntas.js";
+import { seleccionarPreguntasAleatorias } from "./preguntas.js";
 
 let carruselContenedor = document.getElementById("carrusel-quiz");
 let button = document.getElementById("button-quiz");
@@ -8,6 +8,16 @@ let portadaQuiz = document.getElementById("quiz-portada");
 let nextButton = document.getElementById("nextButton");
 let prevButton = document.getElementById("prevButton");
 let finishButton = document.getElementById("finishButton");
+let botonReiniciar = document.getElementById("boton-reiniciar")
+let portadaFinalizar = document.getElementById("portada-finalizar")
+
+function logicaReiniciar() {
+  portadaFinalizar.classList.add("desaparecer");
+  portadaQuiz.classList.remove("desaparecer")
+  button.classList.remove("desaparecer")
+}
+
+botonReiniciar.addEventListener("click",logicaReiniciar)
 
 nextButton.addEventListener("click", function () {
   plusSlides(1);
@@ -21,7 +31,7 @@ finishButton.addEventListener("click", finishQuiz);
 
 let slideIndex = 1;
 
-function llenarPreguntas(){
+function llenarPreguntas(preguntaSeleccionadas){
   let enunciados = document.getElementsByClassName("quiz-title")
 
   for(let i=0;i<preguntaSeleccionadas.length;i++){
@@ -43,10 +53,13 @@ function activarQuiz() {
   portadaQuiz.className += " desaparecer";
   carruselContenedor.classList.remove("desaparecer");
   button.className += " desaparecer";
+  let preguntaSeleccionadas = seleccionarPreguntasAleatorias()
+
+  slideIndex = 1
 
   showSlides(slideIndex);
 
-  llenarPreguntas()
+  llenarPreguntas(preguntaSeleccionadas)
 }
 
 button.addEventListener("click", activarQuiz);
@@ -110,5 +123,7 @@ function finishQuiz() {
   if (seleccionIncompleta) {
     alert(mensajeError);
   } else {
+    carruselContenedor.classList.add("desaparecer");
+    portadaFinalizar.classList.remove("desaparecer")
   }
 }
