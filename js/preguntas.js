@@ -317,7 +317,6 @@ let preguntas = [
 ];
 
 
-
 function getRandomInt(min, max) {
   min = Math.ceil(min); // Redondea hacia arriba para asegurarse de que se incluya el mínimo
   max = Math.floor(max); // Redondea hacia abajo para asegurarse de que se incluya el máximo

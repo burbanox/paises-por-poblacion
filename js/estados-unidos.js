@@ -11,6 +11,10 @@ let finishButton = document.getElementById("finishButton");
 let botonReiniciar = document.getElementById("boton-reiniciar")
 let portadaFinalizar = document.getElementById("portada-finalizar")
 
+let preguntaSeleccionadas = []
+
+
+
 function logicaReiniciar() {
   portadaFinalizar.classList.add("desaparecer");
   portadaQuiz.classList.remove("desaparecer")
@@ -49,11 +53,56 @@ function llenarPreguntas(preguntaSeleccionadas){
 
 }
 
+function getSelecciones(){
+  let arr = []
+
+  for(let i =1;i<=5;i++){
+    let respuestas = []
+    let radio = document.getElementsByName("pregunta_" + i);
+    
+    for(let j=0;j<4;j++){
+      console.log(radio)
+      respuestas.push(radio[j].checked)
+    }
+
+    arr.push(respuestas)
+  }
+
+  return arr
+}
+
+
+function puntaje(seleccionadas)
+{
+  let puntajeFinal = 0
+  let diferentes = false
+
+  for(let i=0;i<5;i++)
+    {
+      for(let j=0;j<4;j++)
+        {
+          if(!(preguntaSeleccionadas[i]["opciones"][j]["respuestaCorrecta"] == seleccionadas[i][j]))
+            {
+              diferentes = true
+              break
+            }
+        }
+
+        if(!diferentes){
+          puntajeFinal+=20
+        }
+    }
+    return puntajeFinal
+}
+
+
 function activarQuiz() {
   portadaQuiz.className += " desaparecer";
   carruselContenedor.classList.remove("desaparecer");
   button.className += " desaparecer";
-  let preguntaSeleccionadas = seleccionarPreguntasAleatorias()
+  preguntaSeleccionadas = seleccionarPreguntasAleatorias()
+
+  $("input[type=radio]").prop('checked', false);
 
   slideIndex = 1
 
@@ -123,7 +172,15 @@ function finishQuiz() {
   if (seleccionIncompleta) {
     alert(mensajeError);
   } else {
+
+    let selecciones = getSelecciones()
+    let puntos = puntaje(selecciones)
+
     carruselContenedor.classList.add("desaparecer");
     portadaFinalizar.classList.remove("desaparecer")
+
+
+
+    console.log(puntos)
   }
 }
