@@ -5,13 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Estados Unidos de America</title>
     <link rel="stylesheet" href="../CSS/Estados-Unidos.css" />
-    <script src ="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   </head>
   <body>
     <header>
       <div class="header-section-1">
         <img src="../imagenes/search-icon.png" alt="" class="search-icon" />
-        <img src="../imagenes/1146025.webp" alt="" class="menu-icon" />
+        <img
+          src="../imagenes/1146025.webp"
+          alt=""
+          class="menu-icon header-menu-image"
+          id="menu-icono"
+        />
+        <nav class="header-nav desaparecer" id="nav">
+          <img
+            src="https://icon-library.com/images/x-icon-png/x-icon-png-27.jpg"
+            alt="X"
+            class="nav-image"
+            id="nav-button"
+          />
+          <ul class="nav-list">
+            <li><a href="#seccion1">Descripcion del Pais</a></li>
+            <li><a href="#seccion2">5 lugares para ir de vacaciones</a></li>
+            <li><a href="#seccion3">Datos Curiosos</a></li>
+            <li><a href="#ultima-seccion">Quiz</a></li>
+          </ul>
+        </nav>
       </div>
       <div class="header-section-2">
         <img src="" alt="" />
@@ -19,7 +38,7 @@
       </div>
     </header>
     <main>
-      <section class="section-1">
+      <section class="section-1" id="seccion1">
         <h2 class="titulo-seccion">Descripcion del pais</h2>
         <div class="main-section-1">
           <img src="../imagenes/Estatua-libertad.jpg" alt="" />
@@ -38,7 +57,7 @@
           </p>
         </div>
       </section>
-      <section class="section-2">
+      <section class="section-2" id="seccion2">
         <h2 class="titulo-seccion">5 lugares para ir de vacaciones</h2>
         <div class="main-section-2">
           <div class="main-section-2-containers">
@@ -100,7 +119,7 @@
           </div>
         </div>
       </section>
-      <section class="section-3">
+      <section class="section-3" id="seccion3">
         <h2 class="titulo-seccion">Datos curiosos</h2>
         <div class="main-section-2">
           <div class="main-section-2-containers">
@@ -347,12 +366,33 @@
         </div>
         <div class="container desaparecer" id="portada-finalizar">
           <h1>Gracias por participar</h1>
-          <p>Tu puntaje fue: </p>
-          <h2 class="puntaje">20%</h2>
+          <p>Tu puntaje fue:</p>
+          <h2 class="puntaje" id="puntos"></h2>
           <button id="boton-reiniciar">Reiniciar</button>
         </div>
       </section>
     </main>
+    <footer>
+      <div class="footer-content">
+        <p>Creado por: Harold Burbano</p>
+        <p>Año de creación: 2024</p>
+        <p>&copy; 2024 Todos los derechos reservados.</p>
+        <p>Bogota D.C , Colombia</p>
+        <p>
+          Contacto:
+          <a href="mailto:juanperez@example.com">haroldburbano2002@gmail.com</a>
+        </p>
+        <div class="footer-links">
+          <a href="#">Políticas de privacidad</a>
+          <a href="#">Términos y condiciones</a>
+        </div>
+        <div class="social-media">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+    </footer>
     <script type="module" src="../js/estados-unidos.js"></script>
   </body>
 </html>

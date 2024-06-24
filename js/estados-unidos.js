@@ -10,9 +10,26 @@ let prevButton = document.getElementById("prevButton");
 let finishButton = document.getElementById("finishButton");
 let botonReiniciar = document.getElementById("boton-reiniciar")
 let portadaFinalizar = document.getElementById("portada-finalizar")
+let textoPuntajes = document.getElementById("puntos")
+
+const NAV_BUTTON = document.getElementById("nav-button")
+const NAV = document.getElementById("nav")
+const MENU = document.getElementById("menu-icono")
+
+
+MENU.addEventListener("click", ()=>
+{
+    NAV.classList.remove("desaparecer")
+})
+NAV_BUTTON.addEventListener("click", () =>
+{
+    NAV.classList.add("desaparecer")
+})
+
+
+
 
 let preguntaSeleccionadas = []
-
 
 
 function logicaReiniciar() {
@@ -179,8 +196,11 @@ function finishQuiz() {
     carruselContenedor.classList.add("desaparecer");
     portadaFinalizar.classList.remove("desaparecer")
 
+    textoPuntajes.textContent = puntos + "%"
 
 
     console.log(puntos)
   }
 }
+
+
