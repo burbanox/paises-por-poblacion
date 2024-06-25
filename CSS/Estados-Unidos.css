@@ -99,6 +99,71 @@ html{
     font-size: 60px;
 }
 
+
+.header-search {
+  position: fixed;
+  width: 70%;
+  background-color: var(--secondary-color);
+  border: 2px solid #fff;
+  border-radius: 15px;
+  right: 50%;
+  bottom: 0;
+  transform: translate(50%, -45%);
+  padding: 20px 0;
+  z-index: 5;
+  font-size: 1.6rem;
+}
+
+
+#searchInput {
+  padding: 10px; /* Espacio interno */
+  border: 2px solid #ccc; /* Borde del input */
+  border-radius: 5px; /* Bordes redondeados */
+  width: 200px; /* Ancho del input */
+  font-size: 16px; /* Tamaño de fuente */
+}
+
+
+.header-search-contenedora{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#searchButton {
+  padding: 10px;
+  background-color: #008cba;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+#searchButton:hover {
+  background-color: #005f5f;
+}
+
+/* Estilos para el resultado */
+#result {
+  padding: 20px;
+  width: 90%;
+  margin-top: 20px;
+  font-size: 18px;
+  border-radius: 20px;
+
+  background-color: #fff;
+}
+
+#etiqueta-pais{
+
+  border: gray;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
 main
 {
     padding-top: 100px;

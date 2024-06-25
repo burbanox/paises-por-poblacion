@@ -10,7 +10,7 @@
   <body>
     <header>
       <div class="header-section-1">
-        <img src="../imagenes/search-icon.png" alt="" class="search-icon" />
+        <img src="../imagenes/search-icon.png" alt="" class="search-icon" id="search-icono"/>
         <img
           src="../imagenes/1146025.webp"
           alt=""
@@ -30,6 +30,20 @@
             <li><a href="#seccion3">Datos Curiosos</a></li>
             <li><a href="#ultima-seccion">Quiz</a></li>
           </ul>
+        </nav>
+
+        <nav class="header-search desaparecer" id="search">
+          <img
+            src="https://icon-library.com/images/x-icon-png/x-icon-png-27.jpg"
+            alt="X"
+            class="nav-image"
+            id="search-close-button"
+          />
+          <div class="header-search-contenedora">
+            <input type="text" id="searchInput" placeholder="Escribe aquí...">
+            <button id="searchButton">Buscar</button>
+            <div id="result"></div>
+          </div>
         </nav>
       </div>
       <div class="header-section-2">
