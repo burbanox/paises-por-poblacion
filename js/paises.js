@@ -1,5 +1,11 @@
 let data = {
-    "Pagina principal" : "http://example.com/nigeria",
+    "Pagina principal" : [
+        {
+            "nombre": "Pagina Principal",
+            "url": "https://burbanox.github.io/paises-por-poblacion/"
+        }
+
+    ],
     "Africa": [
         {
             "nombre": "Nigeria",

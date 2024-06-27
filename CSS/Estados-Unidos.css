@@ -108,7 +108,7 @@ html{
   border-radius: 15px;
   right: 50%;
   bottom: 0;
-  transform: translate(50%, -45%);
+  transform: translate(50%, -116%);
   padding: 20px 0;
   z-index: 5;
   font-size: 1.6rem;
@@ -153,6 +153,9 @@ html{
   margin-top: 20px;
   font-size: 18px;
   border-radius: 20px;
+
+  max-height: 100px;
+  overflow: auto;
 
   background-color: #fff;
 }

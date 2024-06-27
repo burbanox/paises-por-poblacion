@@ -19,6 +19,7 @@ const MENU = document.getElementById("menu-icono");
 
 const searchButton = document.getElementById("searchButton");
 const resultDiv = document.getElementById("result")
+const searchInput = document.getElementById("searchInput")
 
 MENU.addEventListener("click", () => {
   NAV.classList.remove("desaparecer");
@@ -36,6 +37,8 @@ SEARCH_ICONO.addEventListener("click", () => {
 });
 SEARCH_BUTTON.addEventListener("click", () => {
   SEARCH_CONTAINER.classList.add("desaparecer");
+  resultDiv.classList.add("desaparecer")
+  searchInput.value = ""
 });
 
 let preguntaSeleccionadas = [];
@@ -210,6 +213,7 @@ function finishQuiz() {
 
 searchButton.addEventListener("click", function () {
   const query = searchInput.value.toLowerCase();
+  resultDiv.classList.remove("desaparecer")
   performSearch(query);
 });
 
