@@ -123,7 +123,8 @@ function puntaje(seleccionadas) {
 }
 
 function activarQuiz() {
-  portadaQuiz.className += " desaparecer";
+  portadaQuiz.classList.add("desaparecer");
+  console.log(portadaQuiz)
   carruselContenedor.classList.remove("desaparecer");
   button.className += " desaparecer";
   preguntaSeleccionadas = seleccionarPreguntasAleatorias();
