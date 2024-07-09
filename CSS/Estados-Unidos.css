@@ -74,6 +74,7 @@ html{
     width: 50px;
     height: 50px;
     margin-right: 40px;
+    cursor: pointer;
 }
 
 .header-section-1 > .menu-icon
@@ -699,6 +700,39 @@ footer {
 
 @media(min-width : 1365px){
   .main-section-1 > p{
+    font-size: 20px;
+  }
+
+  .section-2 img {
+    min-width: 1002px;
+    height: 752px;
+  }
+
+  .main-section-2-containers > h2{
+    font-size: 45px;
+  }
+
+  .main-section-2-containers > p{
+    font-size: 20px;
+    max-width: 1100px;
+  }
+
+  .section-3 img{
+    min-width: 1002px;
+    height: 752px;
+  }
+
+  #portada-finalizar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 788px;
+    height: 400px;
+  }
+
+
+  .footer-content{
     font-size: 20px;
   }
 }
