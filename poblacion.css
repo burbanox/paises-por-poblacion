@@ -111,3 +111,35 @@ footer > p
     color: var(--text-color);
     font-weight: 600;
 }
+
+@media(0px <= width <= 767px){
+
+    main{
+        padding: 0px;
+        padding-bottom: 60px;
+    }
+
+
+    .continente{
+        width: 80%;
+    }
+
+    .contenedor-banderas{
+        flex-direction: column;
+    }
+
+
+    .contenedor-bandera{
+        margin-bottom: 50px;
+    }
+
+    .contenedor-bandera > img{
+        width: 128px;
+        height: 80px;
+    }
+
+    .contenedor-bandera > p {
+        font-size: 40px;
+        max-width: max-content;
+    }
+}
