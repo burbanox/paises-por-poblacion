@@ -114,6 +114,11 @@ footer > p
 
 @media(0px <= width <= 767px){
 
+
+    header > h1{
+        font-size: 30px;
+    }
+
     main{
         padding: 0px;
         padding-bottom: 60px;
