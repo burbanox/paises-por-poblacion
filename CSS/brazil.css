@@ -6,6 +6,8 @@
     --fourth-color : #B22234;
     --color-prueba : #1e4376;
     --color-prueba2 : #2a548c;
+    --color-primario : #009739;
+    --color-secundario: #ffcc29;
 }
 
 *
@@ -62,7 +64,7 @@ html{
 
 .header-section-1
 {
-    background-color: var(--color-prueba);
+    background-color: var(--color-primario);
     padding: 40px 30px 40px 10px;
     display: flex;
     justify-content: end;
@@ -185,7 +187,7 @@ main > section
 
 .titulo-seccion
 {
-    background-color: var(--color-prueba);
+    background-color: var(--color-secundario);
     font-size: 45px;
     color : white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -333,7 +335,7 @@ p
 
 /* Estilo general para el contenedor del quiz */
 .portada-quiz {
-  background: linear-gradient(to bottom, #003366 0%, #0077CC 100%);
+  background: linear-gradient(to bottom, #009C3B, #FFDF00, #00A859);
   padding: 20px;
   color: white;
   text-align: center;
@@ -344,17 +346,18 @@ p
 
 /* Estilo para el botón del quiz */
 .quiz-button {
-  background: linear-gradient(to bottom, #0055CC 0%, #0099FF 100%);
+  background: #002776;
   border: none;
   color: white;
   padding: 10px 20px;
+  border: 5px solid white;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 25px 10px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 20px;
 }
 
 /* Cambio de color al pasar el cursor por el botón */
@@ -370,7 +373,7 @@ p
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   border-radius: 8px;
-  background: linear-gradient(to right, #74ABE2, #5563DE); /* Degradado azul */
+  background: linear-gradient(to right, #00A859, #FFDF00); /* Degradado azul */
 }
 
 /* Título del Quiz */
@@ -444,7 +447,7 @@ p
 }
 
 .finish-button {
-  background-color: #4CAF50;
+  background-color: #002776;
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -469,7 +472,7 @@ p
 
 .container {
   text-align: center;
-  background: linear-gradient(to bottom, #003366 0%, #0077CC 100%);
+  background: linear-gradient(to bottom, #00A859 0%, #FFDF00 100%);
   padding: 20px;
   border-radius: 10px;
   margin-top: 50px;
@@ -485,7 +488,7 @@ p
   color: white;
 }
 .container button {
-  background-color: #4CAF50;
+  background-color: #002776;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -506,7 +509,7 @@ p
 }
 
 footer {
-  background-color: var(--color-prueba2);
+  background-color: var(--color-primario);
   color: #fff;
   text-align: center;
   padding: 20px 10px;
@@ -640,7 +643,7 @@ footer {
     display: block !important;
     justify-content: space-evenly;
     position: static;
-    background-color: var(--color-prueba);
+    background-color: var(--color-primario);
     border: none;
     border-radius: 0;
     transform: translate(0%, 0%);
