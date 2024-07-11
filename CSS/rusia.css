@@ -91,7 +91,7 @@ html{
     background-color: var(--color-prueba2);
     color: var(--primary-color);
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../imagenes/rusia/360_F_348271748_crlTfuQBtofZAkju1jMNjj0u3SDiEwvg.jpg");
+    url("../imagenes/rusia/russian_flag.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

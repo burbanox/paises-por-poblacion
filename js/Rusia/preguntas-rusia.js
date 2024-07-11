@@ -267,15 +267,6 @@ let preguntas = [
     ],
   },
   {
-    enunciado_pregunta: "¿Qué océano bordea el extremo oriental de Rusia?",
-    opciones: [
-      { textoOpcion: "Océano Atlántico", respuestaCorrecta: false },
-      { textoOpcion: "Océano Índico", respuestaCorrecta: false },
-      { textoOpcion: "Océano Ártico", respuestaCorrecta: false },
-      { textoOpcion: "Océano Pacífico", respuestaCorrecta: true },
-    ],
-  },
-  {
     enunciado_pregunta:
       "¿Qué ciudad rusa es famosa por sus 'Noches Blancas' durante el verano?",
     opciones: [
