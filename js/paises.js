@@ -53,7 +53,7 @@ let data = {
     "Europe": [
         {
             "nombre": "Rusia",
-            "url": "http://example.com/rusia"
+            "url": "https://burbanox.github.io/paises-por-poblacion/HTML/rusia.html"
         },
         {
             "nombre": "Alemania",
@@ -79,7 +79,7 @@ let data = {
         },
         {
             "nombre": "Brasil",
-            "url": "http://example.com/brasil"
+            "url": "https://burbanox.github.io/paises-por-poblacion/HTML/brazil.html"
         },
         {
             "nombre": "México",
