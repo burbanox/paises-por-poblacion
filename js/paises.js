@@ -2,7 +2,7 @@ let data = {
     "Pagina principal" : [
         {
             "nombre": "Pagina Principal",
-            "url": "https://burbanox.github.io/paises-por-poblacion/"
+            "url": "../index.html"
         }
 
     ],
@@ -53,37 +53,37 @@ let data = {
     "Europe": [
         {
             "nombre": "Rusia",
-            "url": "https://burbanox.github.io/paises-por-poblacion/HTML/rusia.html"
+            "url": "../HTML/rusia.html"
         },
         {
             "nombre": "Alemania",
-            "url": "http://example.com/alemania"
+            "url": "../HTML/alemania.html"
         },
         {
             "nombre": "Reino Unido",
-            "url": "http://example.com/reino_unido"
+            "url": "../HTML/reino_unido.html"
         },
         {
             "nombre": "Francia",
-            "url": "http://example.com/francia"
+            "url": "../HTML/francia.html"
         },
         {
             "nombre": "Italia",
-            "url": "http://example.com/italia"
+            "url": "../HTML/italia.html"
         }
     ],
     "America": [
         {
             "nombre": "Estados Unidos",
-            "url": "http://example.com/estados_unidos"
+            "url": "../HTML/Estados-Unidos.html"
         },
         {
             "nombre": "Brasil",
-            "url": "https://burbanox.github.io/paises-por-poblacion/HTML/brazil.html"
+            "url": "../HTML/brazil.html"
         },
         {
             "nombre": "México",
-            "url": "http://example.com/mexico"
+            "url": "../HTML/brazil.html"
         },
         {
             "nombre": "Colombia",
