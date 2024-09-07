@@ -9,23 +9,23 @@ let data = {
     "Africa": [
         {
             "nombre": "Nigeria",
-            "url": "http://example.com/nigeria"
+            "url": "../HTML/nigeria.html"
         },
         {
             "nombre": "Etiopía",
-            "url": "http://example.com/etiopia"
+            "url": "../HTML/etiopia.html"
         },
         {
             "nombre": "Egipto",
-            "url": "http://example.com/egipto"
+            "url": "/HTML/egipto.html"
         },
         {
             "nombre": "República Democrática del Congo",
-            "url": "http://example.com/rdc"
+            "url": "../HTML/republica_democratica_congo.html"
         },
         {
             "nombre": "Tanzania",
-            "url": "http://example.com/tanzania"
+            "url": "../HTML/tanzania.html"
         }
     ],
     "Asia": [
@@ -97,23 +97,23 @@ let data = {
     "Oceania": [
         {
             "nombre": "Australia",
-            "url": "http://example.com/australia"
+            "url": "../HTML/australia.html"
         },
         {
             "nombre": "Papúa Nueva Guinea",
-            "url": "http://example.com/papua_nueva_guinea"
+            "url": "../HTML/papua-guinea.html"
         },
         {
             "nombre": "Nueva Zelanda",
-            "url": "http://example.com/nueva_zelanda"
+            "url": "../HTML/nueva_zelanda.html"
         },
         {
             "nombre": "Fiyi",
-            "url": "http://example.com/fiyi"
+            "url": "../HTML/fiji.html"
         },
         {
             "nombre": "Islas Salomón",
-            "url": "http://example.com/islas_salomon"
+            "url": ""
         }
     ]
 }

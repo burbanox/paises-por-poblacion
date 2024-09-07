@@ -1,266 +1,231 @@
 let preguntas = [
-    {
-      enunciado_pregunta: "¿Cuál es la capital de Nueva Zelanda?",
-      opciones: [
-        { textoOpcion: "Auckland", respuestaCorrecta: false },
-        { textoOpcion: "Wellington", respuestaCorrecta: true },
-        { textoOpcion: "Christchurch", respuestaCorrecta: false },
-        { textoOpcion: "Dunedin", respuestaCorrecta: false },
-      ],
-    },
-    {
-      enunciado_pregunta: "¿Qué idioma indígena es oficial en Nueva Zelanda?",
-      opciones: [
-        { textoOpcion: "Samoano", respuestaCorrecta: false },
-        { textoOpcion: "Maorí", respuestaCorrecta: true },
-        { textoOpcion: "Fiyi", respuestaCorrecta: false },
-        { textoOpcion: "Tongano", respuestaCorrecta: false },
-      ],
-    },
-    {
-      enunciado_pregunta: "¿Qué ciudad es conocida como la capital mundial de los deportes de aventura?",
-      opciones: [
-        { textoOpcion: "Auckland", respuestaCorrecta: false },
-        { textoOpcion: "Wellington", respuestaCorrecta: false },
-        { textoOpcion: "Queenstown", respuestaCorrecta: true },
-        { textoOpcion: "Rotorua", respuestaCorrecta: false },
-      ],
-    },
-    {
-      enunciado_pregunta: "¿Qué famoso director de cine es originario de Nueva Zelanda?",
-      opciones: [
-        { textoOpcion: "Steven Spielberg", respuestaCorrecta: false },
-        { textoOpcion: "Peter Jackson", respuestaCorrecta: true },
-        { textoOpcion: "James Cameron", respuestaCorrecta: false },
-        { textoOpcion: "Martin Scorsese", respuestaCorrecta: false },
-      ],
-    },
-    {
-      enunciado_pregunta: "¿Cómo se llama el grupo indígena principal de Nueva Zelanda?",
-      opciones: [
-        { textoOpcion: "Inuit", respuestaCorrecta: false },
-        { textoOpcion: "Maorí", respuestaCorrecta: true },
-        { textoOpcion: "Aborígenes", respuestaCorrecta: false },
-        { textoOpcion: "Samoanos", respuestaCorrecta: false },
-      ],
-    },
-    {
-      enunciado_pregunta: "¿Qué deporte es el más popular en Nueva Zelanda?",
-      opciones: [
-        { textoOpcion: "Fútbol", respuestaCorrecta: false },
-        { textoOpcion: "Rugby", respuestaCorrecta: true },
-        { textoOpcion: "Críquet", respuestaCorrecta: false },
-        { textoOpcion: "Netball", respuestaCorrecta: false },
-      ],
-    },
-    {
-      enunciado_pregunta: "¿Qué región de Nueva Zelanda es famosa por sus viñedos y producción de vino?",
-      opciones: [
-        { textoOpcion: "Marlborough", respuestaCorrecta: true },
-        { textoOpcion: "Bay of Plenty", respuestaCorrecta: false },
-        { textoOpcion: "Fiordland", respuestaCorrecta: false },
-        { textoOpcion: "Northland", respuestaCorrecta: false },
-      ],
-    },
-    {
-      enunciado_pregunta: "¿Qué cadena montañosa divide la Isla Sur de Nueva Zelanda?",
-      opciones: [
-        { textoOpcion: "Montañas Rocosas", respuestaCorrecta: false },
-        { textoOpcion: "Alpes del Sur", respuestaCorrecta: true },
-        { textoOpcion: "Montañas Azules", respuestaCorrecta: false },
-        { textoOpcion: "Andes", respuestaCorrecta: false },
-      ],
-    },
-    {
-      enunciado_pregunta: "¿Cuál es el pájaro nacional de Nueva Zelanda?",
-      opciones: [
-        { textoOpcion: "Kiwi", respuestaCorrecta: true },
-        { textoOpcion: "Kea", respuestaCorrecta: false },
-        { textoOpcion: "Tui", respuestaCorrecta: false },
-        { textoOpcion: "Moa", respuestaCorrecta: false },
-      ],
-    },
-    {
-      enunciado_pregunta: "¿Qué parque nacional de Nueva Zelanda es famoso por los fiordos Milford Sound y Doubtful Sound?",
-      opciones: [
-        { textoOpcion: "Parque Nacional Abel Tasman", respuestaCorrecta: false },
-        { textoOpcion: "Parque Nacional Tongariro", respuestaCorrecta: false },
-        { textoOpcion: "Parque Nacional Fiordland", respuestaCorrecta: true },
-        { textoOpcion: "Parque Nacional Kahurangi", respuestaCorrecta: false },
-      ],
-    },
-    {
-      enunciado_pregunta: "¿Qué ciudad de Nueva Zelanda es conocida por su actividad geotérmica?",
-      opciones: [
-        { textoOpcion: "Auckland", respuestaCorrecta: false },
-        { textoOpcion: "Rotorua", respuestaCorrecta: true },
-        { textoOpcion: "Christchurch", respuestaCorrecta: false },
-        { textoOpcion: "Dunedin", respuestaCorrecta: false },
-      ],
-    },
-    {
-      enunciado_pregunta: "¿En qué año se firmó el Tratado de Waitangi?",
-      opciones: [
-        { textoOpcion: "1780", respuestaCorrecta: false },
-        { textoOpcion: "1840", respuestaCorrecta: true },
-        { textoOpcion: "1900", respuestaCorrecta: false },
-        { textoOpcion: "1865", respuestaCorrecta: false },
-      ],
-    },
-    {
-      enunciado_pregunta: "¿Qué ciudad fue la primera capital de Nueva Zelanda?",
-      opciones: [
-        { textoOpcion: "Wellington", respuestaCorrecta: false },
-        { textoOpcion: "Russell", respuestaCorrecta: true },
-        { textoOpcion: "Auckland", respuestaCorrecta: false },
-        { textoOpcion: "Christchurch", respuestaCorrecta: false },
-      ],
-    },
-    {
-      enunciado_pregunta: "¿Cuál es la montaña más alta de Nueva Zelanda?",
-      opciones: [
-        { textoOpcion: "Monte Aspiring", respuestaCorrecta: false },
-        { textoOpcion: "Monte Ruapehu", respuestaCorrecta: false },
-        { textoOpcion: "Monte Cook", respuestaCorrecta: true },
-        { textoOpcion: "Monte Taranaki", respuestaCorrecta: false },
-      ],
-    },
-    {
-      enunciado_pregunta: "¿Qué especie de ave gigante extinta era nativa de Nueva Zelanda?",
-      opciones: [
-        { textoOpcion: "Dodo", respuestaCorrecta: false },
-        { textoOpcion: "Moa", respuestaCorrecta: true },
-        { textoOpcion: "Pájaros elefante", respuestaCorrecta: false },
-        { textoOpcion: "Avestruz", respuestaCorrecta: false },
-      ],
-    },
-    {
-      enunciado_pregunta: "¿Qué es el Haka?",
-      opciones: [
-        { textoOpcion: "Un plato tradicional", respuestaCorrecta: false },
-        { textoOpcion: "Una danza de guerra maorí", respuestaCorrecta: true },
-        { textoOpcion: "Un tipo de instrumento musical", respuestaCorrecta: false },
-        { textoOpcion: "Una celebración de año nuevo", respuestaCorrecta: false },
-      ],
-    },
-    {
-      enunciado_pregunta: "¿Qué deporte se juega en el estadio Eden Park en Auckland?",
-      opciones: [
-        { textoOpcion: "Críquet", respuestaCorrecta: false },
-        { textoOpcion: "Rugby", respuestaCorrecta: true },
-        { textoOpcion: "Fútbol", respuestaCorrecta: false },
-        { textoOpcion: "Hockey sobre césped", respuestaCorrecta: false },
-      ],
-    },
-    {
-      enunciado_pregunta: "¿Qué isla de Nueva Zelanda es conocida por sus paisajes volcánicos y geotérmicos?",
-      opciones: [
-        { textoOpcion: "Isla Sur", respuestaCorrecta: false },
-        { textoOpcion: "Isla Norte", respuestaCorrecta: true },
-        { textoOpcion: "Stewart Island", respuestaCorrecta: false },
-        { textoOpcion: "Isla Waiheke", respuestaCorrecta: false },
-      ],
-    },
-    {
-      enunciado_pregunta: "¿Qué famoso sendero en Nueva Zelanda se conoce como uno de los 'Great Walks'?",
-      opciones: [
-        { textoOpcion: "Routeburn Track", respuestaCorrecta: true },
-        { textoOpcion: "Appalachian Trail", respuestaCorrecta: false },
-        { textoOpcion: "Inca Trail", respuestaCorrecta: false },
-        { textoOpcion: "Pacific Crest Trail", respuestaCorrecta: false },
-      ],
-    },
-    {
-      enunciado_pregunta: "¿Qué cultura indígena es una parte integral de la identidad nacional de Nueva Zelanda?",
-      opciones: [
-        { textoOpcion: "Aborigen", respuestaCorrecta: false },
-        { textoOpcion: "Inuit", respuestaCorrecta: false },
-        { textoOpcion: "Maorí", respuestaCorrecta: true },
-        { textoOpcion: "Zulú", respuestaCorrecta: false },
-      ],
-    },
-    {
-      enunciado_pregunta: "¿Qué isla de Nueva Zelanda es famosa por su viticultura y playas?",
-      opciones: [
-        { textoOpcion: "Isla Norte", respuestaCorrecta: false },
-        { textoOpcion: "Stewart Island", respuestaCorrecta: false },
-        { textoOpcion: "Isla Waiheke", respuestaCorrecta: true },
-        { textoOpcion: "Isla Sur", respuestaCorrecta: false },
-      ],
-    },
-    {
-      enunciado_pregunta: "¿Qué rango ocupa Nueva Zelanda en términos de área terrestre a nivel mundial?",
-      opciones: [
-        { textoOpcion: "54", respuestaCorrecta: false },
-        { textoOpcion: "75", respuestaCorrecta: false },
-        { textoOpcion: "75", respuestaCorrecta: true },
-        { textoOpcion: "80", respuestaCorrecta: false },
-      ],
-    },
-    {
-      enunciado_pregunta: "¿Cuál es la ciudad más al sur de Nueva Zelanda?",
-      opciones: [
-        { textoOpcion: "Wellington", respuestaCorrecta: false },
-        { textoOpcion: "Auckland", respuestaCorrecta: false },
-        { textoOpcion: "Invercargill", respuestaCorrecta: true },
-        { textoOpcion: "Dunedin", respuestaCorrecta: false },
-      ],
-    },
-    {
-      enunciado_pregunta: "¿Qué región de Nueva Zelanda es famosa por el rugby y los All Blacks?",
-      opciones: [
-        { textoOpcion: "Canterbury", respuestaCorrecta: true },
-        { textoOpcion: "Otago", respuestaCorrecta: false },
-        { textoOpcion: "Northland", respuestaCorrecta: false },
-        { textoOpcion: "Bay of Plenty", respuestaCorrecta: false },
-      ],
-    },
-    {
-      enunciado_pregunta: "¿Qué famosa trilogía de películas se filmó en gran parte en Nueva Zelanda?",
-      opciones: [
-        { textoOpcion: "Harry Potter", respuestaCorrecta: false },
-        { textoOpcion: "Star Wars", respuestaCorrecta: false },
-        { textoOpcion: "El Señor de los Anillos", respuestaCorrecta: true },
-        { textoOpcion: "Matrix", respuestaCorrecta: false },
-      ],
-    },
-    {
-      enunciado_pregunta: "¿Qué tipo de gobierno tiene Nueva Zelanda?",
-      opciones: [
-        { textoOpcion: "República", respuestaCorrecta: false },
-        { textoOpcion: "Monarquía constitucional", respuestaCorrecta: true },
-        { textoOpcion: "Dictadura", respuestaCorrecta: false },
-        { textoOpcion: "Anarquía", respuestaCorrecta: false },
-      ],
-    },
-    {
-      enunciado_pregunta: "¿Qué famosa formación geológica de Nueva Zelanda tiene columnas de basalto?",
-      opciones: [
-        { textoOpcion: "Waitomo Caves", respuestaCorrecta: false },
-        { textoOpcion: "Pancake Rocks", respuestaCorrecta: true },
-        { textoOpcion: "Fox Glacier", respuestaCorrecta: false },
-        { textoOpcion: "Moeraki Boulders", respuestaCorrecta: false },
-      ],
-    },
-    {
-      enunciado_pregunta: "¿Qué importante acuerdo entre los maoríes y la Corona Británica fue firmado en 1840?",
-      opciones: [
-        { textoOpcion: "Tratado de Versalles", respuestaCorrecta: false },
-        { textoOpcion: "Tratado de Waitangi", respuestaCorrecta: true },
-        { textoOpcion: "Declaración de Independencia", respuestaCorrecta: false },
-        { textoOpcion: "Carta Magna", respuestaCorrecta: false },
-      ],
-    },
-    {
-      enunciado_pregunta: "¿Qué volcán activo es un popular destino turístico en la Isla Norte?",
-      opciones: [
-        { textoOpcion: "Monte Egmont", respuestaCorrecta: false },
-        { textoOpcion: "Monte Tongariro", respuestaCorrecta: true },
-        { textoOpcion: "Monte Ruapehu", respuestaCorrecta: false },
-        { textoOpcion: "Monte Taranaki", respuestaCorrecta: false },
-      ],
-    }
-  ]
+  {
+    enunciado_pregunta: "¿Cuál es la capital de Fiyi?",
+    opciones: [
+      { textoOpcion: "Nadi", respuestaCorrecta: false },
+      { textoOpcion: "Suva", respuestaCorrecta: true },
+      { textoOpcion: "Lautoka", respuestaCorrecta: false },
+      { textoOpcion: "Savusavu", respuestaCorrecta: false },
+    ],
+  },
+  {
+    enunciado_pregunta: "¿Cuál es el deporte más popular en Fiyi?",
+    opciones: [
+      { textoOpcion: "Críquet", respuestaCorrecta: false },
+      { textoOpcion: "Fútbol", respuestaCorrecta: false },
+      { textoOpcion: "Rugby", respuestaCorrecta: true },
+      { textoOpcion: "Baloncesto", respuestaCorrecta: false },
+    ],
+  },
+  {
+    enunciado_pregunta: "¿Qué bebida tradicional se consume en Fiyi como parte de sus ceremonias?",
+    opciones: [
+      { textoOpcion: "Kava", respuestaCorrecta: true },
+      { textoOpcion: "Vino de palma", respuestaCorrecta: false },
+      { textoOpcion: "Cerveza", respuestaCorrecta: false },
+      { textoOpcion: "Coca de mate", respuestaCorrecta: false },
+    ],
+  },
+  {
+    enunciado_pregunta: "¿Qué isla principal de Fiyi alberga la capital Suva?",
+    opciones: [
+      { textoOpcion: "Vanua Levu", respuestaCorrecta: false },
+      { textoOpcion: "Viti Levu", respuestaCorrecta: true },
+      { textoOpcion: "Taveuni", respuestaCorrecta: false },
+      { textoOpcion: "Kadavu", respuestaCorrecta: false },
+    ],
+  },
+  {
+    enunciado_pregunta: "¿Cuántas islas aproximadamente componen Fiyi?",
+    opciones: [
+      { textoOpcion: "50", respuestaCorrecta: false },
+      { textoOpcion: "100", respuestaCorrecta: false },
+      { textoOpcion: "300", respuestaCorrecta: true },
+      { textoOpcion: "500", respuestaCorrecta: false },
+    ],
+  },
+  {
+    enunciado_pregunta: "¿Cuál es el arrecife de coral más famoso de Fiyi?",
+    opciones: [
+      { textoOpcion: "Gran Barrera de Coral", respuestaCorrecta: false },
+      { textoOpcion: "Arrecife de Ningaloo", respuestaCorrecta: false },
+      { textoOpcion: "Arrecife de Coral de Great Astrolabe", respuestaCorrecta: true },
+      { textoOpcion: "Arrecife de Aldabra", respuestaCorrecta: false },
+    ],
+  },
+  {
+    enunciado_pregunta: "¿Cuál es la economía principal de Fiyi?",
+    opciones: [
+      { textoOpcion: "Minería", respuestaCorrecta: false },
+      { textoOpcion: "Turismo", respuestaCorrecta: true },
+      { textoOpcion: "Manufactura", respuestaCorrecta: false },
+      { textoOpcion: "Tecnología", respuestaCorrecta: false },
+    ],
+  },
+  {
+    enunciado_pregunta: "¿Qué grupo de islas en Fiyi es conocido por su belleza y fue escenario de la película 'Castaway'?",
+    opciones: [
+      { textoOpcion: "Islas Mamanuca", respuestaCorrecta: true },
+      { textoOpcion: "Islas Yasawa", respuestaCorrecta: false },
+      { textoOpcion: "Islas Lau", respuestaCorrecta: false },
+      { textoOpcion: "Islas Lomaiviti", respuestaCorrecta: false },
+    ],
+  },
+  {
+    enunciado_pregunta: "¿Cuál es el idioma oficial de Fiyi, además del inglés?",
+    opciones: [
+      { textoOpcion: "Hindi", respuestaCorrecta: true },
+      { textoOpcion: "Francés", respuestaCorrecta: false },
+      { textoOpcion: "Chino", respuestaCorrecta: false },
+      { textoOpcion: "Portugués", respuestaCorrecta: false },
+    ],
+  },
+  {
+    enunciado_pregunta: "¿Qué famosa atracción en Fiyi es conocida por su colección de orquídeas?",
+    opciones: [
+      { textoOpcion: "Jardín del Gigante Dormido", respuestaCorrecta: true },
+      { textoOpcion: "Parque Nacional Bouma", respuestaCorrecta: false },
+      { textoOpcion: "Playa Natadola", respuestaCorrecta: false },
+      { textoOpcion: "Isla de Monuriki", respuestaCorrecta: false },
+    ],
+  },
+  {
+    enunciado_pregunta: "¿Qué evento deportivo internacional ganó Fiyi por primera vez en 2016?",
+    opciones: [
+      { textoOpcion: "Copa del Mundo de Rugby", respuestaCorrecta: false },
+      { textoOpcion: "Medalla de Oro en Rugby a Siete", respuestaCorrecta: true },
+      { textoOpcion: "Copa Asiática de Fútbol", respuestaCorrecta: false },
+      { textoOpcion: "Torneo de Golf Masters", respuestaCorrecta: false },
+    ],
+  },
+  {
+    enunciado_pregunta: "¿Qué islas de Fiyi son conocidas por sus playas vírgenes y opciones de alojamiento económico?",
+    opciones: [
+      { textoOpcion: "Islas Mamanuca", respuestaCorrecta: false },
+      { textoOpcion: "Islas Yasawa", respuestaCorrecta: true },
+      { textoOpcion: "Islas Lomaiviti", respuestaCorrecta: false },
+      { textoOpcion: "Islas Kadavu", respuestaCorrecta: false },
+    ],
+  },
+  {
+    enunciado_pregunta: "¿Cuál es el pico más alto de Fiyi?",
+    opciones: [
+      { textoOpcion: "Monte Fuji", respuestaCorrecta: false },
+      { textoOpcion: "Mount Victoria", respuestaCorrecta: false },
+      { textoOpcion: "Monte Tomanivi", respuestaCorrecta: true },
+      { textoOpcion: "Monte Everest", respuestaCorrecta: false },
+    ],
+  },
+  {
+    enunciado_pregunta: "¿Qué isla de Fiyi es conocida por sus densos bosques y la observación de aves?",
+    opciones: [
+      { textoOpcion: "Vanua Levu", respuestaCorrecta: false },
+      { textoOpcion: "Taveuni", respuestaCorrecta: true },
+      { textoOpcion: "Viti Levu", respuestaCorrecta: false },
+      { textoOpcion: "Kadavu", respuestaCorrecta: false },
+    ],
+  },
+  {
+    enunciado_pregunta: "¿Qué recurso natural es fundamental para la economía de Fiyi?",
+    opciones: [
+      { textoOpcion: "Petróleo", respuestaCorrecta: false },
+      { textoOpcion: "Oro", respuestaCorrecta: false },
+      { textoOpcion: "Azúcar", respuestaCorrecta: true },
+      { textoOpcion: "Hierro", respuestaCorrecta: false },
+    ],
+  },
+  {
+    enunciado_pregunta: "¿Cuál es la religión predominante en Fiyi?",
+    opciones: [
+      { textoOpcion: "Cristianismo", respuestaCorrecta: true },
+      { textoOpcion: "Islam", respuestaCorrecta: false },
+      { textoOpcion: "Budismo", respuestaCorrecta: false },
+      { textoOpcion: "Hinduismo", respuestaCorrecta: false },
+    ],
+  },
+  {
+    enunciado_pregunta: "¿Cuál es la zona horaria de Fiyi?",
+    opciones: [
+      { textoOpcion: "GMT+5", respuestaCorrecta: false },
+      { textoOpcion: "GMT+12", respuestaCorrecta: true },
+      { textoOpcion: "GMT+8", respuestaCorrecta: false },
+      { textoOpcion: "GMT+10", respuestaCorrecta: false },
+    ],
+  },
+  {
+    enunciado_pregunta: "¿Qué animal marino es comúnmente visto en las aguas de Fiyi?",
+    opciones: [
+      { textoOpcion: "Delfín", respuestaCorrecta: false },
+      { textoOpcion: "Tortuga marina", respuestaCorrecta: true },
+      { textoOpcion: "Ballena azul", respuestaCorrecta: false },
+      { textoOpcion: "León marino", respuestaCorrecta: false },
+    ],
+  },
+  {
+    enunciado_pregunta: "¿Cuál es el festival hindú más importante celebrado en Fiyi?",
+    opciones: [
+      { textoOpcion: "Holi", respuestaCorrecta: false },
+      { textoOpcion: "Diwali", respuestaCorrecta: true },
+      { textoOpcion: "Eid al-Fitr", respuestaCorrecta: false },
+      { textoOpcion: "Navratri", respuestaCorrecta: false },
+    ],
+  },
+  {
+    enunciado_pregunta: "¿Qué isla de Fiyi es conocida como la 'Capital de los Arrecifes'?",
+    opciones: [
+      { textoOpcion: "Kadavu", respuestaCorrecta: true },
+      { textoOpcion: "Taveuni", respuestaCorrecta: false },
+      { textoOpcion: "Vanua Levu", respuestaCorrecta: false },
+      { textoOpcion: "Viti Levu", respuestaCorrecta: false },
+    ],
+  },
+  {
+    enunciado_pregunta: "¿Qué antigua cultura tuvo influencia significativa en Fiyi antes de la llegada de los europeos?",
+    opciones: [
+      { textoOpcion: "Inca", respuestaCorrecta: false },
+      { textoOpcion: "Polinesia", respuestaCorrecta: true },
+      { textoOpcion: "Maorí", respuestaCorrecta: false },
+      { textoOpcion: "Azteca", respuestaCorrecta: false },
+    ],
+  },
+  {
+    enunciado_pregunta: "¿Qué isla de Fiyi es un destino famoso para lunas de miel?",
+    opciones: [
+      { textoOpcion: "Viti Levu", respuestaCorrecta: false },
+      { textoOpcion: "Matangi", respuestaCorrecta: true },
+      { textoOpcion: "Vanua Levu", respuestaCorrecta: false },
+      { textoOpcion: "Taveuni", respuestaCorrecta: false },
+    ],
+  },
+  {
+    enunciado_pregunta: "¿En qué año ganó Fiyi su independencia del Reino Unido?",
+    opciones: [
+      { textoOpcion: "1947", respuestaCorrecta: false },
+      { textoOpcion: "1970", respuestaCorrecta: true },
+      { textoOpcion: "1985", respuestaCorrecta: false },
+      { textoOpcion: "1955", respuestaCorrecta: false },
+    ],
+  },
+  {
+    enunciado_pregunta: "¿Qué isla es conocida por sus aguas termales naturales y mud pools en Fiyi?",
+    opciones: [
+      { textoOpcion: "Nanuya Lailai", respuestaCorrecta: false },
+      { textoOpcion: "Sabeto", respuestaCorrecta: true },
+      { textoOpcion: "Lautoka", respuestaCorrecta: false },
+      { textoOpcion: "Malolo", respuestaCorrecta: false },
+    ],
+  },
+  {
+    enunciado_pregunta: "¿Qué famoso explorador europeo fue el primero en llegar a Fiyi?",
+    opciones: [
+      { textoOpcion: "James Cook", respuestaCorrecta: false },
+      { textoOpcion: "Abel Tasman", respuestaCorrecta: false },
+      { textoOpcion: "Willem Schouten", respuestaCorrecta: false },
+      { textoOpcion: "Abel Tasman", respuestaCorrecta: true },
+    ],
+  }
+]
+
   
   
     

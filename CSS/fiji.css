@@ -6,7 +6,7 @@
     --fourth-color : #B22234;
     --color-prueba : #1e4376;
     --color-prueba2 : #2a548c;
-    --color-primario : #012169;
+    --color-primario : #69B3E7;
     --color-secundario: #C8102E;
     --color-titulo-section :#fff;
     --color-subsections: #000;
@@ -93,7 +93,7 @@ html{
     background-color: var(--color-prueba2);
     color: var(--primary-color);
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../imagenes/nueva_zelanda/bangladesh_waving_flag.jpg");
+    url("../imagenes/fiji/waving_flag.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
