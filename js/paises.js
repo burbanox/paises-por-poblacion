@@ -31,23 +31,23 @@ let data = {
     "Asia": [
         {
             "nombre": "China",
-            "url": "http://example.com/china"
+            "url": "../HTML/china.html"
         },
         {
             "nombre": "India",
-            "url": "http://example.com/india"
+            "url": "../HTML/india.html"
         },
         {
             "nombre": "Indonesia",
-            "url": "http://example.com/indonesia"
+            "url": "../HTML/indonesia.html"
         },
         {
             "nombre": "Pakistán",
-            "url": "http://example.com/pakistan"
+            "url": "../HTML/pakistan.html"
         },
         {
             "nombre": "Bangladesh",
-            "url": "http://example.com/bangladesh"
+            "url": "../HTML/bangladesh.html"
         }
     ],
     "Europe": [
@@ -87,11 +87,11 @@ let data = {
         },
         {
             "nombre": "Colombia",
-            "url": "http://example.com/colombia"
+            "url": "../HTML/colombia.html"
         },
         {
             "nombre": "Argentina",
-            "url": "http://example.com/argentina"
+            "url": "../HTML/argentina.html"
         }
     ],
     "Oceania": [
@@ -113,7 +113,7 @@ let data = {
         },
         {
             "nombre": "Islas Salomón",
-            "url": ""
+            "url": "../HTML/islas-salomon.html"
         }
     ]
 }
